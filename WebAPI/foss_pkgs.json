@@ -1,0 +1,295 @@
+{
+    "total components" : 5,
+    "total packages" : 10,
+    "components" : {
+	"graphical-environment" : [
+		"display server",
+		"desktop environment",
+		"window managers"
+	],
+	"command-line" : [
+		"utilities"
+	],
+	"services" : [
+		"daemons"
+	]
+    },
+    "packages" : {
+	"all" : [
+		{
+			"package-name" : "arch-install-scripts",
+			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically"
+			"package-component" : "development",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "build-devel",
+			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc."
+			"package-component" : "development",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "xorg",
+			"package-description" : "X Display server general package",
+			"package-component" : "display server",
+			"downloads" : [
+				{
+					"download-method" : "official-repository"	
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://TBC"]
+				}
+			],
+			"extra" : {
+				"decription" : "All extra/built-in packages that is part of this package",
+				"packages" : [ 
+					{
+						"package-name" : "xorg-xinit",
+						"package-description" : "X Display server's implementation of a Graphical Environment initialization utility, used to enter a graphical environment",
+						"downloads" : [
+							{
+								"download-method" : "official-repository"	
+								"repositories" : ["apt", "apt-get", "pacman"]
+							},
+						]
+					}
+				]
+			}
+		},
+		{
+			"package-name" : "wayland",
+			"package-component" : "display server",
+			"downloads" : [
+				{
+					"download-method" : "official-repository"	
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://TBC"]
+				}
+			]
+		},
+		{
+			"package-name" : "BerryWM",
+			"package-component" : "window manager",
+			"downloads" : [
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/JLErvin/berry"]
+				}
+			]
+		},
+		{
+			"package-name" : "bspwm",
+			"package-component" : "window manager",
+			"dependencies" : [
+				"sxhkd"
+			],
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/baskerville/bspwm"]
+				}
+			]
+		},
+		{
+			"package-name" : "GNOME",
+			"package-component" : "desktop environment",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "KDE",
+			"package-component" : "desktop environment",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "XFCE",
+			"package-component" : "desktop environment",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "sxhkd",
+			"package-component" : "utilities"
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/baskerville/sxhkd"]
+				}
+			]
+		}
+	],
+	"display server" : [
+		{
+			"package-name" : "xorg",
+			"package-description" : "X Display server general package",
+			"downloads" : [
+				{
+					"download-method" : "official-repository"	
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://TBC"]
+				}
+			],
+			"extra" : {
+				"decription" : "All extra/built-in packages that is part of this package",
+				"packages" : [ 
+					{
+						"package-name" : "xorg-xinit",
+						"package-description" : "X Display server's implementation of a Graphical Environment initialization utility, used to enter a graphical environment",
+						"downloads" : [
+							{
+								"download-method" : "official-repository"	
+								"repositories" : ["apt", "apt-get", "pacman"]
+							},
+						]
+					}
+				]
+			}
+		},
+		{
+			"package-name" : "wayland",
+			"downloads" : [
+				{
+					"download-method" : "official-repository"	
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://TBC"]
+				}
+			]
+		}
+	],
+	"desktop environment" : [
+		{
+			"package-name" : "GNOME",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "KDE",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "XFCE",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		}
+	],
+	"window managers" : [
+		{
+			"package-name" : "BerryWM",
+			"downloads" : [
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/JLErvin/berry"]
+				}
+			]
+		},
+		{
+			"package-name" : "bspwm",
+			"dependencies" : [
+				"sxhkd"
+			],
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/baskerville/bspwm"]
+				}
+			]
+		}
+	],
+	"utilities" : [
+		{
+			"package-name" : "sxhkd",
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				},
+				{
+					"download-method" : "git",
+					"repositories" : ["https://github.com/baskerville/sxhkd"]
+				}
+			]
+		}
+	],
+	"development" : [
+		{
+			"package-name" : "arch-install-scripts",
+			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically"
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		},
+		{
+			"package-name" : "build-devel",
+			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc."
+			"downloads" : [
+				{
+					"download-method" : "official-repository",
+					"repositories" : ["apt", "apt-get", "pacman"]
+				}
+			]
+		}
+	]
+    }
+}
