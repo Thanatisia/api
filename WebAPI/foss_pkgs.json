@@ -18,7 +18,7 @@
 	"all" : [
 		{
 			"package-name" : "arch-install-scripts",
-			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically"
+			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically",
 			"package-component" : "development",
 			"downloads" : [
 				{
@@ -29,7 +29,7 @@
 		},
 		{
 			"package-name" : "build-devel",
-			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc."
+			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc.",
 			"package-component" : "development",
 			"downloads" : [
 				{
@@ -44,7 +44,7 @@
 			"package-component" : "display server",
 			"downloads" : [
 				{
-					"download-method" : "official-repository"	
+					"download-method" : "official-repository",	
 					"repositories" : ["apt", "apt-get", "pacman"]
 				},
 				{
@@ -60,9 +60,9 @@
 						"package-description" : "X Display server's implementation of a Graphical Environment initialization utility, used to enter a graphical environment",
 						"downloads" : [
 							{
-								"download-method" : "official-repository"	
+								"download-method" : "official-repository",
 								"repositories" : ["apt", "apt-get", "pacman"]
-							},
+							}
 						]
 					}
 				]
@@ -73,7 +73,7 @@
 			"package-component" : "display server",
 			"downloads" : [
 				{
-					"download-method" : "official-repository"	
+					"download-method" : "official-repository",	
 					"repositories" : ["apt", "apt-get", "pacman"]
 				},
 				{
@@ -141,7 +141,7 @@
 		},
 		{
 			"package-name" : "sxhkd",
-			"package-component" : "utilities"
+			"package-component" : "utilities",
 			"downloads" : [
 				{
 					"download-method" : "official-repository",
@@ -160,7 +160,7 @@
 			"package-description" : "X Display server general package",
 			"downloads" : [
 				{
-					"download-method" : "official-repository"	
+					"download-method" : "official-repository",	
 					"repositories" : ["apt", "apt-get", "pacman"]
 				},
 				{
@@ -176,9 +176,9 @@
 						"package-description" : "X Display server's implementation of a Graphical Environment initialization utility, used to enter a graphical environment",
 						"downloads" : [
 							{
-								"download-method" : "official-repository"	
+								"download-method" : "official-repository",	
 								"repositories" : ["apt", "apt-get", "pacman"]
-							},
+							}
 						]
 					}
 				]
@@ -188,7 +188,7 @@
 			"package-name" : "wayland",
 			"downloads" : [
 				{
-					"download-method" : "official-repository"	
+					"download-method" : "official-repository",
 					"repositories" : ["apt", "apt-get", "pacman"]
 				},
 				{
@@ -272,7 +272,7 @@
 	"development" : [
 		{
 			"package-name" : "arch-install-scripts",
-			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically"
+			"package-description" : "Collection of useful scripts generally required by and for a base ArchLinux install either via the official archiso or from your own linux distro build. Contains various useful tools such as genfstab for generating filesystem tables automatically",
 			"downloads" : [
 				{
 					"download-method" : "official-repository",
@@ -282,7 +282,7 @@
 		},
 		{
 			"package-name" : "build-devel",
-			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc."
+			"package-description" : "Collection of Building or Development tools used for software development such as make, gcc, g++ etc.",
 			"downloads" : [
 				{
 					"download-method" : "official-repository",
