@@ -30,10 +30,85 @@ If you would like to contribute to the project (Thank you in advance), please re
 ### Synopsis/Syntax
 
 - JSON file format
-	- Import in HTML
-		```html
-		<script type="text/javascript" src="https://raw.githubusercontent.com/Thanatisia/"> </script>
-		```
+	- Import in HTML/CSS3/Javascript
+        - Using pure javascript via XMLHttpRequest (Static Website supported, Recommended to use AJAX)
+            ```javascript
+            /*
+            Thanks to the following references for this advice
+            - https://stackoverflow.com/questions/2499567/how-to-make-a-json-call-to-an-url/2499647#2499647 : Importing JSON using purely GET request
+            */
+            
+            const xmlhttp = new XMLHttpRequest();
+            var json_api_url = "https://raw.githubusercontent.com/Thanatisia/api/main/WebAPI/api_name_here.json";
+            
+            // HTTP GET request 
+            var HTTPreq = new XMLHttpRequest();                 // Create new XML HTTP Request
+            HTTPreq.open("GET", json_api_url, false);           // Open GET request and download from URL
+            HTTPreq.send(null);                                 // Send back nothing to complete the TCP/IP Handshake (SYN, ACK-SYN, SYN)
+            var http_res_content = HTTPreq.responseText;        // Get the response text from the GET request packet
+            
+            // Read in GET response text and parse into JSON
+            var json_content = JSON.parse(http_res_content);    // Parse GET response string into JSON 
+            
+            // Use JSON object
+            var value = json_content.key_name;
+            console.log(value + " : " + "key_name");
+            ```
+            
+        - Using FetchAPI (Dynamic Website)
+            - Dependencies
+                - Server
+                    + Node.JS
+                + JQuery
+            - Code
+                ```javascript
+                <script src="javascript">
+                    fetch('https://raw.githubusercontent.com/Thanatisia/api/main/WebAPI/api_name_here.json')
+                        .then(res => res.json())
+                        .then( (out) => {
+                            console.log('Output: ', out);
+                        }).catch(err => console.error(err));
+                </script>
+                ```
+        
+        - Using AJAX with FetchAPI (Dynamic Website)
+            - Dependencies
+                - Server
+                    + Node.JS
+                    + Apache
+                + AJAX
+                + JQuery
+            - Code
+                ```javascript
+                
+                // Get FETCH response from URL
+                json_api_url = "https://raw.githubusercontent.com/Thanatisia/api/main/WebAPI/api_name_here.json";
+                
+                // Asynchronous function to get URL and the response
+                const getJSON = async url => {
+                    // Get FETCH response
+                    const response = await fetch(url);
+                    
+                    // Error Checking
+                    if(response.ok) // Check if response worked (no 404 errors etc)
+                    {
+                        var data = response.json(); // Get JSON from response 
+                    }
+                    
+                    // Return output
+                    return data;
+                }
+                
+                // Use function
+                getJSON(json_api_url)
+                    .then(data => {
+                        // Statements
+                        console.log(data);
+                    }).catch(error => {
+                        // Error Statements
+                        console.error(error);
+                    });
+                ```
 
 	- Import in Python
 		- via REST (remote) API
