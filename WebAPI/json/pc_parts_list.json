@@ -1,0 +1,37 @@
+{
+    "name" : "PC Parts List",
+    "_id" : "PC-Parts-List",
+    "components" : [
+        {"name" : "case", "description" : "The casing that will house the Motherboard and the attached peripherals"},
+        {"name" : "motherboard", "description" : "The heart of the computer"},
+        {"name" : "cpu", "description" : "The Central Processing Unit, the brains of the computer, generally used for I/O and Operating Systems Operations"},
+        {"name" : "gpu", "description" : "The Graphical Processing Unit, used for rendering and performing activities requiring drawing."},
+        {"name" : "cooling", "description" : "Peripherals to cool down the CPU, terminologies include 'AIO' => 'All-in-One'", "glossary" : [{"AIO" : "All-in-One"}]}, 
+        {"name" : "memory", "description" : "Commonly just known as 'RAM' (stands for Random Access Memory), This memory chip storage temporary data containing various information like current system information and positions etc. (known as Cache) for use in the current session, reducing load times.", 
+            "recommendations" : [
+                "Always get the RAM in a set of 2 and in the same model type to ensure there isnt any discrepancy in power requirements etc.",
+                "Place your RAMs with a space in between to run in Dual Channel memory. Dual Channel memory allows for parallel processing (running multiple actions at the same time, for example)"
+            ]
+        },
+        {"name" : "storage", "description" : "Your storage devices that will contain your Operating System and data. Commonly known as Hard drives. As of 2022, Storage devices comes in the form of SATA HDD (2.5 inch and 3.5 inch), SATA SSD, M.2 SATA SSD, NVME M.2 SSD" },
+        {"name" : "psu", "description" : "Power Supply Unit"}, 
+        {"name" : "input"},
+        {"name" : "output"}
+    ],
+    "builds" : [
+        {
+            "description" : "",
+            "purpose" : "",
+            "price" : {
+                "budget" : "",
+                "total_Price" : ""
+            },
+            "parts" : {
+                "count" : 0,
+                "list" : [
+                    { "component_type" : "", "brand" : ""," model" : "", "purpose" : "", "price" : "", "count" : 0 }
+                ]
+            }
+        }
+    ]
+}

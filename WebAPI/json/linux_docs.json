@@ -1,0 +1,19 @@
+{
+    "_id" : "LINUX_01",
+    "description" : "Write-up of Linux topics, terminologies and usage",
+    "glossary" : {
+        "ncurses" : "A type of library/classes for designing Terminal User Interface (TUI)"
+    },
+    "shellscript" : {
+        "operators" : {
+            "+" : {"description" : "Addition", "Syntax" : "$((a+b))"},
+            "-" : {"description" : "Subtraction", "Syntax" : "$((a-b))"},
+            "*" : {"description" : "Multiplication"," Syntax" : "$((a*b))"},
+            "//" : {"description" : "Division", "Syntax" : "$((a//b))"},
+            "%" : {"description" : "Modulus, finding the remainder-of","Syntax" : "$((a%b))"}
+        },
+        "commands" : [
+            {"name" : "echo", "syntax" : "echo {options} [message]", "parameters" : {"-e" : "Run special characters and regex formatting"}, "usage" : ["echo -e 'Hello World!\n'"]}
+        ]
+    }
+}

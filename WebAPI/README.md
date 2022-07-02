@@ -23,7 +23,9 @@ At the moment, it is still a WIP and is technically considered in development, t
 If you would like to contribute to the project (Thank you in advance), please refer to my [CONTRIBUTING.md]("../CONTRIBUTING.md")
 
 ## Files
-+ [foss_pkgs.json](foss_pkgs.json) : This API contains (or indeed, aims to contain) as many FOSS package information such as links, package names, methods etc. for programming usage
+
+- [JSON API](json)
+    + [foss_pkgs.json](foss_pkgs.json) : This API contains (or indeed, aims to contain) as many FOSS package information such as links, package names, methods etc. for programming usage
 
 ## Documentation
 

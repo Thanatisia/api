@@ -1,0 +1,15 @@
+{
+    "base" : ["arch", "debian", "gentoo", "void"],
+    "package-managers" : ["apt", "apt-get", "dpkg", "pacman", "portage"],
+    "tree" : [
+        { "name" : "Arch", "base ": "Arch", "package-manager" : "pacman", "distros" : ["ArcoLinux", "EndeavourOS", "Manjaro"] },
+        { "name" : "Debian", "base" : "Debian", "package-manager" : ["apt", "apt-get", "dpkg"], "distros" : ["Ubuntu", "Kali Linux"] },
+        { "name" : "Gentoo", "base" : "Gentoo", "package-manager" : "portage", "distros" : [] },
+        { "name" : "ArcoLinux", "base" : "Arch", "package-manager" : "pacman", "distros" : [] },
+        { "name" : "EndeavourOS", "base" : "Arch", "package-manager" : "pacman", "distros" : [] },
+        { "name" : "Manjaro", "base" : "Arch", "package-manager" : "pacman", "distros" : [] },
+        { "name" : "Ubuntu", "base" : "Debian", "package-manager" : ["apt", "apt-get", "dpkg"], "distros" : ["Linux Mint"] },
+        { "name" : "Linux Mint", "base" : "Ubuntu", "package-manager" : ["apt", "apt-get", "dpkg"], "distros" : [] },
+        { "name" : "Kali Linux", "base" : "Debian", "package-manager" : ["apt", "apt-get", "dpkg"], "distros" : [] }
+    ]
+}

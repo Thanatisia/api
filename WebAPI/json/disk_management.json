@@ -1,0 +1,27 @@
+{
+    "partition_schema" : {
+        "partition_Table" : "GPT|MBR",
+        "disk_label" : "",
+        "disk_Size" : "",
+        "partitions" : [
+            {"partition_description" : "", "partition_Label" : "", "partition_Type" : "", "partition_fileType" : "", "partition_start_Size" : "0%", "partition_end_Size" : "", "partition_Options" : ""}
+        ]
+    },
+    "glossary" : {
+        "partition_tables" : ["GPT", "MBR"],
+        "filesystems" : ["fat32", "ext4", "btrfs", "zfs", "jfs", "f2fs", "reiserfs", "xfs", "vfat", "ntfs"],
+        "device_acronyms" : {
+            "SATA" : "Serial ATA",
+            "SAS" : "Serial Attached SCSI",
+            "SCSI" : "Small Computer System Interface",
+            "USB" : "Universal Serial Bus",
+            "NVME" : "NVM Express",
+            "eMMC" : "Embedded MMC"
+        },
+        "device_handle_Format" : {
+            "/dev/sdX" : ["SATA", "SAS", "SCSI", "USB Flashdrive"],
+            "/dev/nvme0nX" : ["NVME"],
+            "/dev/mmcblkX" : ["MMC", "eMMC", "SD"]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "_id" : "linux_1",
+    "description" : "Your Linux Distribution Installs/Build Specifications",
+    "releases" : [
+        {"list-ver" : "v0.1.0", "author" : "Asura (https://github.com/Thanatisia)", "date" : "2022-06-26", "time" : "2121H", "changelog" : ["Initial Release"]}
+    ],
+    "components" : ["File Manager", "Shell", "Terminal Emulator", "Text Editor", "Display Server", "Graphical Environment", "Window Manager", "Desktop Environment", "Display Manager", "Login Manager", "Desktop Manager", "Compositor", "Status Monitor", "Application Launcher", "Daemons", "Utilities"],
+    "builds" : [
+        {
+            "_id" : 1, "name" : "", "author" : "", "distribution" : "",
+            "packages" : {
+                "number-of-packages" : 0,
+                "list" : [
+                    {"component" : "", "application-title" : "", "package-name" : "", "description" : "", "url-links" : [""]}
+                ]
+            },
+            "resources" : []
+        }
+    ]
+}
